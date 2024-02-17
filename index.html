@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span class="start">Start</span>
+    <div class="container">
+        <span id="result"></span>
+        <div class="hands">
+            <span class="player">
+                User
+            </span>
+            <div class="man">
+                <img src="./images/0.png" alt="stone" id="manimg">
+            </div>
+            <div class="bot">
+                <img src="./images/0.png" alt="stone" id="botimg">
+            </div>
+            <span class="robot">
+                Bot
+            </span>
+        </div>
+        <div class="buttons">
+                <button class="btn" name="Stone" data-num="0">Stone</button>
+                <button class="btn" name="Paper" data-num="1">Paper</button>
+                <button class="btn" name="Scissors" data-num="2">Scissors</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #4169e1;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    visibility: hidden;
+  
+}
+.hands{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    outline: none;
+    border: 1px solid white;
+    color: #4169e1;
+    font-size: 20px;
+    font-weight: 400;
+}
+.player,.robot{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: #4169e1;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn:hover , .player:hover , .robot:hover ,.start:hover{
+    background-color: #4169e1;
+    color: aliceblue;
+
+}
+.man img{
+    transform: rotate(90deg);
+    width: 400px;
+    height: 400px;
+}
+.bot img{
+    transform: rotate(270deg);
+    width: 400px;
+    height: 400px;
+}
+#result{
+    visibility: hidden;
+}
+
+.man.shake {
+    animation: shakeleft 0.35s ease;
+}
+
+.bot.shake {
+    animation: shakeright 0.35s ease;
+}
+@keyframes shakeleft {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+}
+
+@keyframes shakeright {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+}
+.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: #4169e1;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+#result{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
